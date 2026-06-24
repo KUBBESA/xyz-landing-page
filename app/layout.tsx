@@ -1,24 +1,24 @@
 ```tsx
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "XYZ - Your Product Title",
-  description: "Description of XYZ product",
-};
+  title: 'XYZ - Building Tomorrow',
+  description: 'Discover the next generation platform for modern teams.',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
-  );
+  )
 }
 ```
